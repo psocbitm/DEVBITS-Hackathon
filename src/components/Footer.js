@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 function Footer() {
   return (
@@ -7,11 +8,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <Logo />
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
@@ -39,7 +36,7 @@ function Footer() {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 pt-8">
           © 2023{" "}
           <Link href="https://github.com/psocbitm" className="hover:underline">
-            Palash Asati
+            Palash Asati and Alisha Singh
           </Link>
           . All Rights Reserved.
         </span>

@@ -4,21 +4,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserContext } from "@/context/UserContext";
 import { getAuth } from "firebase/auth";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const auth = getAuth();
 
-function Logo() {
-  return (
-    <Link href="/" className="-m-1.5 p-1.5">
-      <span className="sr-only">Your Company</span>
-      <img
-        className="h-8 w-auto"
-        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-        alt=""
-      />
-    </Link>
-  );
-}
 function MenuItem({ text, href }) {
   return (
     <Link href={href} className="text-sm font-semibold leading-6 text-gray-900">
