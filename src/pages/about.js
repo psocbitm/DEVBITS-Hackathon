@@ -28,7 +28,7 @@ export default function About() {
             Our team of brokers has years of experience navigating the financial
             markets and developing cutting-edge investment strategies that
             deliver results. We stay ahead of market trends, so our clients
-            don't have to.
+            don&apos;t have to.
           </p>
           <Link
             href="/services"
