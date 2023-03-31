@@ -1,10 +1,13 @@
 import Layout from "@/components/Layout";
+import { UserProvider } from "@/context/UserContext";
 import "@/styles/globals.css";
-
+import "../firebase/firebase";
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <UserProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </UserProvider>
   );
 }
