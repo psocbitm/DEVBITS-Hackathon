@@ -3,27 +3,27 @@ import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { UserContext } from "@/context/UserContext";
 import { getAuth } from "firebase/auth";
+import Link from "next/link";
 
 const auth = getAuth();
 
 function Logo() {
   return (
-    <a href="/" className="-m-1.5 p-1.5">
+    <Link href="/" className="-m-1.5 p-1.5">
       <span className="sr-only">Your Company</span>
       <img
         className="h-8 w-auto"
         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
         alt=""
       />
-    </a>
+    </Link>
   );
 }
-
 function MenuItem({ text, href }) {
   return (
-    <a href={href} className="text-sm font-semibold leading-6 text-gray-900">
+    <Link href={href} className="text-sm font-semibold leading-6 text-gray-900">
       {text}
-    </a>
+    </Link>
   );
 }
 
@@ -85,12 +85,12 @@ export default function Header() {
               Logout
             </div>
           ) : (
-            <a
+            <Link
               href="/register"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Signup/Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           )}
         </div>
       </nav>
@@ -129,12 +129,12 @@ export default function Header() {
                     Logout
                   </div>
                 ) : (
-                  <a
+                  <Link
                     href="/register"
                     className="block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Signup/Log in
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>

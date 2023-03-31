@@ -1,16 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyATZPY2RS8xQolstc3pdXLwaHalt7v1vDU",
-  authDomain: "hackathon-c1d57.firebaseapp.com",
-  projectId: "hackathon-c1d57",
-  storageBucket: "hackathon-c1d57.appspot.com",
-  messagingSenderId: "19899326767",
-  appId: "1:19899326767:web:913c7017a7f224162b01da",
-  measurementId: "G-HF9RLT8YQX",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth();
