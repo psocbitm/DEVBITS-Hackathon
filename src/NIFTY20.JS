@@ -1,0 +1,24 @@
+const stocks = [
+  RELIANCE,
+  TCS,
+  HDFCBANK,
+  INFY,
+  HDFC,
+  ICICIBANK,
+  KOTAKBANK,
+  BHARTIARTL,
+  BAJFINANCE,
+  HINDUNILVR,
+  SBIN,
+  AXISBANK,
+  LT,
+  ASIANPAINT,
+  MARUTI,
+  NESTLEIND,
+  TITAN,
+  M & M,
+  SUNPHARMA,
+  ULTRACEMCO,
+];
+
+export default stocks;
